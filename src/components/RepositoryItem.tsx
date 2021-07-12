@@ -1,6 +1,14 @@
 import { Container, Title, Description, Link } from "../styles/RepositoryItem";
 
-export function RepositoryItem({ repository }) {
+interface RepositoryItemProps {
+  repository: {
+    name: string;
+    description: string;
+    html_url: string;
+  };
+}
+
+export function RepositoryItem({ repository }: RepositoryItemProps) {
   return (
     <Container>
       <Title>{repository.name}</Title>
