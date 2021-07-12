@@ -5,6 +5,10 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+
+    body {
+      font: 16px "Helvetica Neue", Arial, sans-serif;
+      color: #121214;
+    }
   }
 `;
